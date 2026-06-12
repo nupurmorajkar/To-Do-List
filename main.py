@@ -14,8 +14,9 @@ while True:
             print("No task to do")
         else:
             print("\n Tasks :")
-            for task in tasks:
-                print("-", task)
+            for index,task in enumerate(tasks, start=1):
+
+                print(index, task)
 
     elif choice == "2":
         task = input("Enter task to add: ")
@@ -38,4 +39,4 @@ while True:
         break       
 
     else:
-        print("Invalid choice. Please try again sorry.")
+        print("Invalid choice. Please try again .")
